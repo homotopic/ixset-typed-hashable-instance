@@ -1,46 +1,38 @@
-cabal-version:       2.4
-name:                ixset-typed-hashable-instance
-version:             0.0.0.0
-synopsis:            Hashable orphan instance for ixset-typed.
-description:         Hashable orphan instance for ixset-typed.
-homepage:            https://github.com/homotopic-tech/ixset-typed-hashable-instance
-bug-reports:         https://github.com/homotopic-tech/ixset-typed-hashable-instance/issues
-license:             MIT
-license-file:        LICENSE
-author:              Daniel Firth
-maintainer:          Daniel Firth <dan.firth@homotopic.tech>
-copyright:           2020 Daniel Firth
-category:            Data Structures
-build-type:          Simple
-extra-doc-files:     README.md
-                     CHANGELOG.md
-tested-with:         GHC == 8.8.3
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           ixset-typed-hashable-instance
+version:        0.1.0.0
+synopsis:       Hashable instance for ixset-typed.
+description:    Please see the README on GitHub at <https://github.com/githubuser/ixset-typed-hashable-instance#readme>
+category:       Data Structures
+homepage:       https://github.com/githubuser/ixset-typed-hashable-instance#readme
+bug-reports:    https://github.com/githubuser/ixset-typed-hashable-instance/issues
+author:         Daniel Firth
+maintainer:     dan.firth@homotopic.tech
+copyright:      2020 Daniel Firth
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
 
 source-repository head
-  type:                git
-  location:            https://github.com/homotopic-tech/ixset-typed-hashable-instance.git
-
-common common-options
-  build-depends:       base ^>= 4.13.0.0
-  
-  ghc-options:         -Wall
-                       -Wcompat
-                       -Widentities
-                       -Wincomplete-uni-patterns
-                       -Wincomplete-record-updates
-  if impl(ghc >= 8.0)
-    ghc-options:       -Wredundant-constraints
-  if impl(ghc >= 8.2)
-    ghc-options:       -fhide-source-paths
-  if impl(ghc >= 8.4)
-    ghc-options:       -Wmissing-export-lists
-                       -Wpartial-fields
-  if impl(ghc >= 8.8)
-    ghc-options:       -Wmissing-deriving-strategies
-
-  default-language:    Haskell2010
+  type: git
+  location: https://github.com/githubuser/ixset-typed-hashable-instance
 
 library
-  import:              common-options
-  hs-source-dirs:      src
-  exposed-modules:     IxsetTypedHashableInstance
+  exposed-modules:
+      Data.IxSet.Typed.Hashable
+      Lib
+  other-modules:
+      Paths_ixset_typed_hashable_instance
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010

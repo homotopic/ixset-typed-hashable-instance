@@ -1,0 +1,24 @@
+name:                ixset-typed-hashable-instance
+version:             0.1.0.0
+github:              https://gitlab.com/homotopic-tech/ixset-typed-hashable-instance
+license:             MIT
+author:              "Daniel Firth"
+maintainer:          "dan.firth@homotopic.tech"
+copyright:           "2020 Daniel Firth"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+synopsis:            Hashable instance for ixset-typed.
+category:            Data Structures
+
+description:         Please see the README on GitHub at <https://github.com/githubuser/ixset-typed-hashable-instance#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- hashable
+- ixset-typed
+
+library:
+  source-dirs: src
