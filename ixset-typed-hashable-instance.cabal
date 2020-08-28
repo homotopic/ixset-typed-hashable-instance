@@ -5,7 +5,7 @@ cabal-version: 1.12
 -- see: https://github.com/sol/hpack
 
 name:           ixset-typed-hashable-instance
-version:        0.1.0.0
+version:        0.1.0.1
 synopsis:       Hashable instance for ixset-typed.
 description:    Please see the README on GitHub at <https://github.com/githubuser/ixset-typed-hashable-instance#readme>
 category:       Data Structures
