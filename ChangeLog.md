@@ -2,4 +2,4 @@
 
 ## v0.1.0.0
 
-* Hashabkle instance for ixset-typed.
+* Hashable instance for ixset-typed.
